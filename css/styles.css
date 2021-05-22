@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.img-carousel {
+  width: 100%;
+  max-height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  background: rgba(10, 10, 10, 0.411);
+}
+
+.lista-productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 22%;
+  height: auto;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+}
+
+.card-body .caracteristica {
+  height: 90px;
+}
+
+.card-body p.precio {
+  display: inline;
+}
+
+.btn-agregar {
+  width: 100%;
+}
+
+#icono-carrito {
+  cursor: pointer;
+}
+
+.lista-carrito {
+  z-index: 9999;
+  display: none;
+}
+
+.ocultar {
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */

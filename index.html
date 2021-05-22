@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col py-4">
+                    <p class="text-center h5">Lorem ipsum dolor Lorem ipsum dolor</p>
+                </div>
+
+                <div class="col py-4 d-flex justify-content-end position-relative">
+                    <div class="iniciar-sesion">
+                        <i class="fas fa-user-circle mt-1"></i><a href="#" class="text-dark h6 mx-3" id="">Iniciar Sesion</a><a href="#" class="text-dark h6">Crear Cuenta</a>
+                    </div>
+                    <div class="carrito">
+                        <i class="fas fa-shopping-cart mx-3"  id="icono-carrito"></i>
+                        <div class="lista-carrito position-absolute bg-danger top-60 end-0 mx-3" id="">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-white">Imagen</th>
+                                        <th class="text-white">Producto</th>
+                                        <th class="text-white">Marca</th>
+                                        <th class="text-white">Precio</th>
+                                        <th class="text-white">Cantidad</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row d-flex align-items-center">
+                <div class="col-3  py-3">
+                    <div class="logo">
+                        <h3>Online Store</h3>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="menu-buscador d-flex justify-content-end">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid d-flex justify-content-end">
+                                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                                        <li class="nav-item dropdown ">
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="playeras" value="Playeras">Playeras</button>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="camisas" value="Camisas">Camisas</button>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="pantalones" value="Pantalones">Pantalones</button>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="sudaderas" value="Sudaderas">Sudaderas</button>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="vestidos" value="Vestidos">Vestidos</button>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="zapatos" value="Zapatos">Zapatos</button>
+                                        </li>
+                                    </ul>
+
+                                    <form class="d-flex">
+                                        <input class="form-control me-1" type="search" placeholder="Buscar"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section - Carousel -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col carousel p-0">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active w-100">
+                                <img src="img/carousel1.jpg" class="img-carousel d-block w-100 img-carousel" alt="carousel1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carousel2.jpg" class="img-carousel d-block w-100 img-carousel" alt="carousel2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carousel3.jpg" class="img-carousel d-block w-100 img-carousel" alt="carousel3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col titulo-productos">
+                    <h3 class="text-center mt-5 mb-5">TODOS LOS ARTICULOS</h3>
+                </div>
+            </div>
+          
+            <div class="row">
+                <div class="col-3 ">
+                    <p class="fw-bold">Filtrar</p>
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Genero</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+
+                    <select class="form-select  mt-5" aria-label="Default select example">
+                        <option selected>Marca</option>
+                        <option value="adidas">Adidas</option>
+                        <option value="nike">Nike</option>
+                        <option value="tommy hilfiger">Tommy hilfiger</option>
+                        <option value="vans">Vans</option>
+                        <option value="levis">Levis</option>
+                        <option value="c&a">c&a</option>
+                    </select>
+
+                    <select class="form-select mt-5" aria-label="Default select example">
+                        <option selected>Talla</option>
+                        <option value="ch">Chica</option>
+                        <option value="m">Mediana</option>
+                        <option value="g">Grande</option>
+                    </select>
+
+                    <select class="form-select mt-5" aria-label="Default select example">
+                        <option selected>Color</option>
+                        <option value="negro">Negro</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="verde">Verde</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="naranja">Naranja</option>
+                        <option value="gris">Gris</option>
+                        <option value="cafe">Cafe</option>
+                        <option value="morado">Morado</option>
+                        <option value="rosado">Rosado</option>
+                    </select>
+
+                </div>
+                <div class="col lista-productos">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
