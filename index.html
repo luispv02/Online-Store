@@ -25,7 +25,7 @@
                     </div>
                     <div class="carrito">
                         <i class="fas fa-shopping-cart mx-3"  id="icono-carrito"></i>
-                        <div class="lista-carrito position-absolute bg-danger top-60 end-0 mx-3" id="">
+                        <div class="lista-carrito position-absolute bg-info top-60 end-0 mx-3" id="">
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -33,6 +33,7 @@
                                         <th class="text-white">Producto</th>
                                         <th class="text-white">Marca</th>
                                         <th class="text-white">Precio</th>
+                                        <th class="text-white">Genero</th>
                                         <th class="text-white">Cantidad</th>
                                     </tr>
                                 </thead>
@@ -67,22 +68,22 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mb-2 mb-lg-0 ">
                                         <li class="nav-item dropdown ">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="playeras" value="Playeras">Playeras</button>
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="playeras" value="playera">Playeras</button>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="camisas" value="Camisas">Camisas</button>
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="camisas" value="camisa">Camisas</button>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="pantalones" value="Pantalones">Pantalones</button>
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="pantalones" value="pantalon">Pantalones</button>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="sudaderas" value="Sudaderas">Sudaderas</button>
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="sudaderas" value="sudadera">Sudaderas</button>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="vestidos" value="Vestidos">Vestidos</button>
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="vestidos" value="vestido">Vestidos</button>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="zapatos" value="Zapatos">Zapatos</button>
+                                            <button type="button" class="btn btn-outline-dark mx-3" id="zapatos" value="zapatos">Zapatos</button>
                                         </li>
                                     </ul>
 
@@ -146,14 +147,14 @@
                 <div class="col-3 ">
                     <p class="fw-bold">Filtrar</p>
 
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Genero</option>
+                    <select class="form-select" aria-label="Default select example" id="genero" >
+                        <option value=''>Genero</option>
                         <option value="hombre">Hombre</option>
                         <option value="mujer">Mujer</option>
                     </select>
 
-                    <select class="form-select  mt-5" aria-label="Default select example">
-                        <option selected>Marca</option>
+                    <select class="form-select  mt-5" aria-label="Default select example" id="marca">
+                        <option selected value="">Marca</option>
                         <option value="adidas">Adidas</option>
                         <option value="nike">Nike</option>
                         <option value="tommy hilfiger">Tommy hilfiger</option>
@@ -162,15 +163,20 @@
                         <option value="c&a">c&a</option>
                     </select>
 
-                    <select class="form-select mt-5" aria-label="Default select example">
-                        <option selected>Talla</option>
+                    <select class="form-select mt-5" aria-label="Default select example" id="talla">
+                        <option selected value="">Talla</option>
                         <option value="ch">Chica</option>
                         <option value="m">Mediana</option>
                         <option value="g">Grande</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
                     </select>
 
-                    <select class="form-select mt-5" aria-label="Default select example">
-                        <option selected>Color</option>
+                    <select class="form-select mt-5" aria-label="Default select example" id="color">
+                        <option selected value="">Color</option>
                         <option value="negro">Negro</option>
                         <option value="amarillo">Amarillo</option>
                         <option value="verde">Verde</option>
@@ -183,6 +189,8 @@
                         <option value="morado">Morado</option>
                         <option value="rosado">Rosado</option>
                     </select>
+
+         
 
                 </div>
                 <div class="col lista-productos">
