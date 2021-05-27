@@ -39,6 +39,10 @@ const infoArticulo = {
 //EVENTOS
 window.addEventListener('DOMContentLoaded', () => {
     mostrarEnHTML(articulos)//Mostrar articulos en el HTML
+
+    //Mostrar los articulos de LocalStorage en el carrito HTML
+    carrito = JSON.parse(localStorage.getItem('articulo')) || []
+    mostrarCarritoHTML();
 })
 
 iconoCarrito.addEventListener('click', mostrarListaArticulos)//Mostrar Tabla de articulos agregados al carrito
@@ -64,7 +68,7 @@ color.addEventListener('change',(e) => {
 })
 
 playeras.addEventListener('click', (e) => {
-    infoArticulo.tipo = e.target.value
+    infoArticulo.tipo = e.target.value;
     filtrarResultados();
 })
 camisas.addEventListener('click', (e) => {
@@ -112,7 +116,7 @@ function mostrarEnHTML(articulos){
     articulos.forEach(articulo => {
     
         const card = document.createElement('div');
-        card.classList.add('card');
+        card.classList.add('card', 'col-12', 'mx-md-3', 'col-xl-4');
     
         const {imagen, caracteristicas, marca, talla, precio,id, genero } = articulo
     
@@ -142,7 +146,8 @@ function limpiarHTML(){
 
 
 function filtrarResultados(){
-    //alert('Se han filtrado los resultados')
+    
+    alert('Se han filtrado los resultados')
     const resultadoFilter = articulos.filter(filtrarTipo).filter(filtrarGenero).filter(filtrarMarca).filter(filtrarTalla).filter(filtrarColor)
 
     if(resultadoFilter.length){
@@ -151,6 +156,7 @@ function filtrarResultados(){
         noResultados()
     }
     console.log(resultadoFilter)
+    
 }
 
 function noResultados(){
@@ -162,6 +168,7 @@ function noResultados(){
     error.style.height = '50px'
     listaProductos.appendChild(error)
 
+    
     
 }
 
@@ -209,6 +216,8 @@ function filtrarColor(articulo){
         return articulo;
     }
 }
+
+
 
 //AGREGAR AL CARRITO
 function agregarCarrito(e){
@@ -276,7 +285,12 @@ function mostrarCarritoHTML(){
         tbody.appendChild(tr)
     })
 
-    
+    //Agregar LocalStorage
+    agregarLocalStorage();
+}
+
+function agregarLocalStorage(){
+    localStorage.setItem('articulo', JSON.stringify(carrito));
 }
 
 function limpiarRepetidos(){

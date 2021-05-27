@@ -14,18 +14,18 @@
 
     <header>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col py-4">
-                    <p class="text-center h5">Lorem ipsum dolor Lorem ipsum dolor</p>
+            <div class="row promocion-carrito d-flex flex-column flex-md-row">
+                <div class="col pt-4 promocion">
+                    <p class="text-center h5 ">Lorem ipsum dolor Lorem ipsum dolor</p>
                 </div>
 
-                <div class="col py-4 d-flex justify-content-end position-relative">
+                <div class="col py-4 d-flex justify-content-end position-relative info-carrito">
                     <div class="iniciar-sesion">
                         <i class="fas fa-user-circle mt-1"></i><a href="#" class="text-dark h6 mx-3" id="">Iniciar Sesion</a><a href="#" class="text-dark h6">Crear Cuenta</a>
                     </div>
                     <div class="carrito">
-                        <i class="fas fa-shopping-cart mx-3"  id="icono-carrito"></i>
-                        <div class="lista-carrito position-absolute bg-info top-60 end-0 mx-3" id="">
+                        <a href="#"  aria-current="page" class="text-dark btn-carrito"><i class="fas fa-shopping-cart mx-3"  id="icono-carrito"></i></a>
+                        <div class="lista-carrito position-absolute bg-info top-60 end-0 mx-3"  id="">
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -48,18 +48,18 @@
             </div>
 
 
-            <div class="row d-flex align-items-center">
-                <div class="col-3  py-3">
+            <div class="row d-flex align-items-center mb-3">
+                <div class="col-4">
                     <div class="logo">
-                        <h3>Online Store</h3>
+                        <h3 class="h6">Online Store</h3>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col p-0">
                     <div class="menu-buscador d-flex justify-content-end">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="container-fluid d-flex justify-content-end">
-                                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
@@ -67,31 +67,26 @@
 
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mb-2 mb-lg-0 ">
-                                        <li class="nav-item dropdown ">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="playeras" value="playera">Playeras</button>
+                                        <li class="nav-item dropdown mx-lg-2">
+                                            <button type="button" class="btn btn-outline-dark  w-100" id="playeras" value="playera">Playeras</button>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="camisas" value="camisa">Camisas</button>
+                                        <li class="nav-item dropdown  mx-lg-2">
+                                            <button type="button" class="btn btn-outline-dark w-100" id="camisas" value="camisa">Camisas</button>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="pantalones" value="pantalon">Pantalones</button>
+                                        <li class="nav-item dropdown  mx-lg-2">
+                                            <button type="button" class="btn btn-outline-dark w-100" id="pantalones" value="pantalon">Pantalones</button>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="sudaderas" value="sudadera">Sudaderas</button>
+                                        <li class="nav-item dropdown  mx-lg-2">
+                                            <button type="button" class="btn btn-outline-dark w-100" id="sudaderas" value="sudadera">Sudaderas</button>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="vestidos" value="vestido">Vestidos</button>
+                                        <li class="nav-item dropdown  mx-lg-2">
+                                            <button type="button" class="btn btn-outline-dark w-100" id="vestidos" value="vestido">Vestidos</button>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <button type="button" class="btn btn-outline-dark mx-3" id="zapatos" value="zapatos">Zapatos</button>
+                                        <li class="nav-item dropdown  mx-lg-2">
+                                            <button type="button" class="btn btn-outline-dark w-100" id="zapatos" value="zapatos">Zapatos</button>
                                         </li>
                                     </ul>
 
-                                    <form class="d-flex">
-                                        <input class="form-control me-1" type="search" placeholder="Buscar"
-                                            aria-label="Search">
-                                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
-                                    </form>
                                 </div>
                             </div>
                         </nav>
@@ -136,7 +131,7 @@
     </section>
 
     <section>
-        <div class="container-fluid mt-5">
+        <div class="container-fluid mt-2">
             <div class="row">
                 <div class="col titulo-productos">
                     <h3 class="text-center mt-5 mb-5">TODOS LOS ARTICULOS</h3>
@@ -144,7 +139,7 @@
             </div>
           
             <div class="row">
-                <div class="col-3 ">
+                <div class="col-12 col-md-3 mb-5">
                     <p class="fw-bold">Filtrar</p>
 
                     <select class="form-select" aria-label="Default select example" id="genero" >
@@ -153,7 +148,7 @@
                         <option value="mujer">Mujer</option>
                     </select>
 
-                    <select class="form-select  mt-5" aria-label="Default select example" id="marca">
+                    <select class="form-select  mt-1" aria-label="Default select example" id="marca">
                         <option selected value="">Marca</option>
                         <option value="adidas">Adidas</option>
                         <option value="nike">Nike</option>
@@ -163,7 +158,7 @@
                         <option value="c&a">c&a</option>
                     </select>
 
-                    <select class="form-select mt-5" aria-label="Default select example" id="talla">
+                    <select class="form-select mt-1" aria-label="Default select example" id="talla">
                         <option selected value="">Talla</option>
                         <option value="ch">Chica</option>
                         <option value="m">Mediana</option>
@@ -175,7 +170,7 @@
                         <option value="8">8</option>
                     </select>
 
-                    <select class="form-select mt-5" aria-label="Default select example" id="color">
+                    <select class="form-select mt-1" aria-label="Default select example" id="color">
                         <option selected value="">Color</option>
                         <option value="negro">Negro</option>
                         <option value="amarillo">Amarillo</option>
@@ -189,11 +184,8 @@
                         <option value="morado">Morado</option>
                         <option value="rosado">Rosado</option>
                     </select>
-
-         
-
                 </div>
-                <div class="col lista-productos">
+                <div class="col col-md lista-productos" id="#playeras">
                     
                 </div>
             </div>
